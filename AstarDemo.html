@@ -61,7 +61,7 @@
                                     Path weights by using raycasts intersecting with layer masks to modify grid space cost values when the grid is generated.
                                 </li>
                                   <li>
-                                    Implemented efficient path blue using a 
+                                    Implemented efficient path blur by using a modified version of the Box Blur algorithmn, which sets the node's movement cost to a value based on the average of the surrounding nodes. The modification for efficiency uses an optimized approach by doing two passes. The first is a horizontal pass, which takes the left value, if it is an edge it is the sum of the 3 nodes where the node that exists outside of our grid is equal to the value of the edge node, and after this the value is calculated by taking the final value of the previous node, subtracting the value two nodes to the left, and adding the value of the node to the immediate right. This is then repeated for the vertical direction, on a new grid utilyzing the values generated in the previous pass.
                                 </li>
                                 <li>
                                     Visualization of paths and grid values in order to allow easy modification for testing.
