@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Second Avenue Learning</title>
+		<title>Fast as Heck</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,33 +42,42 @@
 					<section id="main" class="wrapper style1">
 						<div class="inner">
 							<header class="major">
-								<h1>Second Avenue Learning</h1>
-								<h3>Game Development Intern - C#, Nintendo SDK, Unity, Javascript</h3>
+								<h1>A-Star Demo - Personal Project</h1>
+								<h3>Unity, C#</h3>
 							</header>
-                            <h3 style="font-weight: bold"> Spring 2019 </h3>
-                            <p> During my time at Second Avenue Learning, the majority of my time was spent working on the port of the Original Mobile Games to the Nintendo Switch, but also assisted in several other projects within the company, including updating the mobile version of the Original Mobile Games, developing an open source web application, as well as assisting in QA between projects.</p>
+							<p>Unity based tech demo of an A* solution utilizing a heap to efficiently generate paths, coroutines to handle unit requests, layer masks for dynamic grid generation and path weights, and Unity editor visualizations to allow designers to easily modify values.</p>
                             <p>
-                                My work in this role involved: 
+                                 My work on this project included: 
                             </p>
                               <ul>
                                 <li>
-                                  Porting a mobile Unity game to the Nintendo Switch using the Nintendo SDK through updating existing features and gameplay mechanics to feel better for the player, update and expand the User Interface, adding new features and mechanics, and getting the project ready for release.
+                                  Dynamic grid generation, including height variation of nodes, by using layer masks and raycasting to determine height and walkability.  
                                 </li>
                                   <li>
-                                  Fixing issues with a Unity mobile game to provide additional gameplay features, fixed bugs that had been reported, and providing quality of life updates to make it match the Nintendo Switch version.
-                                </li>
-                                  <li>
-                                  Developing an open source web application with to assist with teaching sign language. This site involved the ability for users to create stories by giving a list of words, definitions, a video of the story being signed, and time stamps for key words, which then were used to create the story pages, which served the videos, as well as generated the sentences of the story, with clickable terms that provided a definition along with a video clip of the sign being performed. Developed two web games that took in the word list, videos and definitions and created games based on these variables.
+                                  Heap optimization for pathfinding, reducing path finding times from 40ms previous to Heap implementation, to between 4 and 10 ms after implementing it, allowing for more agents to pathfind at the same time. 
                                 </li>
                                 <li>
-                                    Between projects I assisted the QA Lead in providing QA for a web application to ensure it worked across browsers, as well as to find niche bugs and provide thorough documentation for the developers to find and fix bugs.
+                                    Path weights by using raycasts intersecting with layer masks to modify grid space cost values when the grid is generated.
                                 </li>
-                                
+                                  <li>
+                                    Implemented efficient path blue using a 
+                                </li>
+                                <li>
+                                    Visualization of paths and grid values in order to allow easy modification for testing.
+                                </li>
+                                  <li>
+                                    Utilized Unity event system to set up coroutines for units to help prevent suddenly efficiency drops when multiple units generate a new path.
+                                </li>
                             </ul>
-                            
-                            
-                            
-                          
+                            <p>
+                            <div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/PathGeneration.PNG" alt="" /></span> <div> Demo of paths generated for multiple agents.</div></div>
+											<div class="col-4"><span class="image fit"><img src="images/PathfindingDemo.gif" alt="" /></span><div> Agents moving in action</div></div>
+											<div class="col-4"><span class="image fit"><img src="images/GridWeights.PNG" alt="" /><div> Example of grid visualized using gizmos. Darker gray means higher cost and red means it is unwalkable.</div></span></div>
+											
+										</div>
+                            </p>
+                          <p></p>
 							
 						</div>
 					</section>
@@ -80,7 +89,7 @@
 								<header>
 									<h3>Chase Slattery - Game Engineer</h3>
 								</header>
-								<p>Gameplay/AI Programmer with a passion for music, <br />MMOs, Strategy Games, and RPGs who spends way to much time <br />looking for purple loot, grinding EXP, or creating cities.<br /></p>
+								<p>Gameplay/AI Programmer with a passion for music, <br />MMOs, Strategy Games, and RPGs who spends way to much time <br />looking for purple loot, grinding EXP, or creating cities.<br /> </p>
 								<ul class="icons">
 									<li><a href="https://twitter.com/slatterychase" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://github.com/Slatterychase" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
